@@ -49,6 +49,8 @@ require("lazy").setup({
   },
 })
 
+require("oil").setup() -- filesystem editing like a text file
+
 -- keymaps
 local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "<leader>d", '"_dd', opts)
