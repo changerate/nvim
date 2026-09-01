@@ -27,4 +27,22 @@ return {
     -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
     lazy = false,
   },
+  {
+    "pwntester/octo.nvim",
+    cmd = "Octo",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "folke/snacks.nvim",
+      "nvim-mini/mini.icons",
+    },
+    opts = {
+      picker = "snacks",
+    },
+    keys = {
+      { "<leader>gpl", "<cmd>Octo pr list<cr>", desc = "Octo: list PRs" },
+      { "<leader>gps", "<cmd>Octo pr search<cr>", desc = "Octo: search PRs" },
+      { "<leader>gpr", "<cmd>Octo review start<cr>", desc = "Octo: start review" },
+      { "<leader>gpc", "<cmd>Octo pr checkout<cr>", desc = "Octo: checkout PR" },
+    },
+  },
 }
