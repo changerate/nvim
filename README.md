@@ -1,5 +1,20 @@
 # 💤 LazyVim
 
+## Installing Neovim on a fresh Ubuntu/aarch64 machine
+
+Ubuntu's `apt` package for `neovim` is usually too old for this config (lazy.nvim
+requires Neovim >= 0.8.0). Install a recent prebuilt release instead:
+
+```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz
+sudo tar -C /opt -xzf nvim-linux-arm64.tar.gz
+echo 'export PATH="$PATH:/opt/nvim-linux-arm64/bin"' >> ~/.bashrc
+source ~/.bashrc
+nvim --version
+```
+
+Use `nvim-linux-x86_64.tar.gz` instead on x86_64 machines.
+
 ## Treesitter on Jetson / aarch64 Linux (GLIBC mismatch)
 
 On Jetson boards (JetPack/L4T Ubuntu, e.g. 20.04 with glibc 2.31 or 22.04 with
