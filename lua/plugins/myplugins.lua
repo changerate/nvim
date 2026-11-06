@@ -45,4 +45,9 @@ return {
       { "<leader>gpc", "<cmd>Octo pr checkout<cr>", desc = "Octo: checkout PR" },
     },
   },
+  {
+    "sindrets/diffview.nvim",
+    cmd = { "DiffviewOpen", "DiffviewFileHistory" },
+    opts = {},
+  },
 }
