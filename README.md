@@ -1,5 +1,14 @@
 # 💤 LazyVim
 
+## Installing this config repo
+
+This repo is the config file that the `nvim` command will use.
+It comes with the package manager, `LazyVim`, and packages installed.
+
+```bash
+git clone git@github.com:changerate/nvim.git ~/.config/nvim
+```
+
 ## Installing Neovim on a fresh Ubuntu/aarch64 machine
 
 Ubuntu's `apt` package for `neovim` is usually too old for this config (lazy.nvim
