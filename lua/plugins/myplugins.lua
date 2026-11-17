@@ -1,6 +1,19 @@
 -- ~/.config/nvim/lua/plugins/myplugins.lua
 return {
   {
+    "folke/snacks.nvim",
+    opts = function(_, opts)
+      for _, item in ipairs(opts.dashboard.preset.keys) do
+        if item.key == "s" then
+          item.desc = "Restore Last Session"
+          item.section = false
+          item.action = ":lua require('persistence').load({ last = true })"
+          break
+        end
+      end
+    end,
+  },
+  {
     "lewis6991/gitsigns.nvim",
     lazy = false, -- 🔑 load immediately
     event = {}, -- override LazyVim's LazyFile event
