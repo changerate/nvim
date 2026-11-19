@@ -56,6 +56,14 @@ Then in Neovim:
 
 # Extras
 
+## Installing ripgrep (rg) on Ubuntu
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install ripgrep=13.0.0-2ubuntu0.1
+```
+
 ## Installing LazyGit on Ubuntu linux-arm64
 
 ```bash
